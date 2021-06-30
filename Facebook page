@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Facebook</title>
+</head>
+<body>
+    <div id="container">
+        <div id="esquerda">
+            <img src="file:///C:/Users/karin/Downloads/facebook.svg"/>
+            <p>As inscrições para o PAME 21.1 estão oficialmente abertas!! 🧡🖤
+            
+            O Processo Seletivo da Fluxo engloba diversas capacitações e palestras sobre assuntos não só técnicos, mas também ligados à gerenciamento, ao funcionamento da empresa, à gestão de tempo, a soft skills, entr outros assuntos! E o melhor de tudo é que você não precisa ter nenhum conhecimento prévio, pois estaremos passando todo o conteúdo para vocês!
+            
+            Então, se você tem interesse em pôr em prática seu aprendizado ... 𝐕𝐞𝐫 𝐦𝐚𝐢𝐬 </p>
+        </div>
+        <div id="direita">
+            <img src="file:///C:/Users/karin/Downloads/menu.svg"/>
+        </div>
+   </div>
+</body>
+</html>
