@@ -1,0 +1,172 @@
+def menu():
+
+    print ("""\033[1;37m
+        MENU PRINCIPAL. Escolha a função desejada abaixo: \033[m
+       \033[0;32m 1- Cadastro de uma nova matéria \033[m
+       \033[0;33m 2- Cadastro de um novo professor \033[m
+       \033[0;34m 3- Cadastro de um novo aluno \033[m
+       \033[0;35m 4- Mostrar todos as matérias cadastradas \033[m
+       \033[0;36m 5- Mostrar todos os professores cadastrados \033[m
+       \033[0;31m 6- Mostrar todos os alunos cadastrados \033[m
+       \033[0;31m 7 - Abrir Menu de Turmas \033[m
+       \033[0;31m 8 - Sair do Programa \033[m
+        """)
+    
+    return 
+        
+class materia:
+
+    def __init__(self,prof,alunos,notas):
+        self.prof = prof
+        self.alunos= alunos
+        alunos= []
+        self.notas= notas
+        notas= []
+
+class prof:
+
+    def __init__(self,materia,alunos):
+        self.materia= materia
+        self.alunos= alunos
+        alunos= []
+
+
+class aluno:
+
+    def __init__(self,turma,profs,notas,materias):
+        self.turma= turma
+        self.profs= profs
+        profs= []
+        self.notas= notas
+        notas = []
+        self.materias= materias
+        materias= []
+
+class Turma:
+
+    def __init__(self,profs,alunos,materias,notas):
+        self.prof= profs
+        profs= []
+        self.alunos= alunos
+        alunos= []
+        self.materias= materias
+        materias= []
+        self.notas= notas
+        notas= []
+
+def menuturma():
+
+		print (""" \033[0;36m
+		MENU DE TURMAS. Selecione a opção desejada:
+		1- Cadastro de uma nova turma
+		2- Designar professor para uma turma
+		3- Adicionar alunos em uma turma
+		4- Remover alunos de uma turma
+        5- Dar a nota final dos alunos de uma turma
+        6- Mostrar todos os alunos de uma turma (em ordem alfabética)
+        7- Mostras todas as turmas cadastradas (em ordem decrescente de
+número de alunos)
+        8- Voltar ao Menu Principal
+	\033[0;36m """)
+
+		escolha= int(input())
+
+		if escolha== 1:
+			print (" Insira a turma: ")
+			turma= input()
+			
+			
+		elif escolha==2:
+			print(" Insira a turma: ")
+			turma= input()
+
+            print(" Insira o nome do professor: ")
+            prof= input()
+			
+		
+		elif escolha== 3:
+			print(" Insira o nome do aluno: ")
+			
+
+		elif escolha== 4:
+            print(" Insira o nome do aluno: ")
+            aluno = input()
+            nomes.remove(aluno)
+
+		elif escolha== 5:
+            print(" Insira o nome do aluno: ")
+            aluno = input()
+            notas(aluno)
+
+        elif escolha== 6:
+            alunos()
+            sort(alunos)
+
+        elif escolha== 7:
+            turmas()
+
+        elif escolha== 8:
+            menu()
+
+		else:
+                    print (" \033[0;31m Escolha uma opcao valida. \033[m ")
+                    menu5()
+
+
+		return
+
+
+def main():
+
+	menu()
+	opcao= int(input())
+
+	if opcao== 1 :
+            materia= input (" Insira o nome da matéria: ")
+            cria (materia)
+            print ("                                ") 
+            print (" \033[0;35m A matéria foi cadastrada com sucesso. \033[m ")
+            main()
+	
+	elif opcao== 2 :
+		print (" Insira o nome do professor: ")
+		prof= input()
+		main()
+
+	elif opcao== 3 :
+		print (" Insira o nome do aluno: ")
+		aluno= input()
+		main()
+
+	elif opcao== 4 :
+		materias()
+		main()
+
+    elif opcao== 5 :
+        profs()
+        main()
+
+    elif opcao== 6 :
+        alunos()
+        main()
+
+	elif opcao== 7 :
+		menuturma()
+		main() 
+
+	elif opcao== 8:
+		print ("                                ")
+		print (""" \033[0;34m O programa foi encerrado. \033[m   """)
+		print ("                                ")
+
+	else:
+		print ("                                ")
+		print (""" \033[0;35m  Por favor, escolha uma opcao existente.	\033[m	""")
+		print ("                                ") 
+
+		main()
+
+	return
+
+
+main()
