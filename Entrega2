@@ -1,3 +1,5 @@
+############### FUNÇÕES ####################
+
 def menu():
 
     print ("""\033[1;37m
@@ -14,7 +16,7 @@ def menu():
     
     return 
         
-class materia:
+class Materia:
 
     def __init__(self,prof,alunos,notas):
         self.prof = prof
@@ -23,7 +25,7 @@ class materia:
         self.notas= notas
         notas= []
 
-class prof:
+class Prof:
 
     def __init__(self,materia,alunos):
         self.materia= materia
@@ -31,7 +33,7 @@ class prof:
         alunos= []
 
 
-class aluno:
+class Aluno:
 
     def __init__(self,turma,profs,notas,materias):
         self.turma= turma
@@ -82,6 +84,7 @@ número de alunos)
 
             print(" Insira o nome do professor: ")
             prof= input()
+            __init__(self,materia,alunos)
 			
 		
 		elif escolha== 3:
@@ -115,6 +118,7 @@ número de alunos)
 
 		return
 
+###################### MAIN #########################
 
 def main():
 
@@ -123,7 +127,7 @@ def main():
 
 	if opcao== 1 :
             materia= input (" Insira o nome da matéria: ")
-            cria (materia)
+            __init__(self,prof,alunos,notas)
             print ("                                ") 
             print (" \033[0;35m A matéria foi cadastrada com sucesso. \033[m ")
             main()
@@ -131,23 +135,28 @@ def main():
 	elif opcao== 2 :
 		print (" Insira o nome do professor: ")
 		prof= input()
+        __init__(self,materia,alunos)
 		main()
 
 	elif opcao== 3 :
 		print (" Insira o nome do aluno: ")
 		aluno= input()
+        __init__(self,turma,profs,notas,materias)
 		main()
 
 	elif opcao== 4 :
 		materias()
+        __init__(self,prof,alunos,notas)
 		main()
 
     elif opcao== 5 :
         profs()
+        __init__(self,materia,alunos)
         main()
 
     elif opcao== 6 :
         alunos()
+        __init__(self,turma,profs,notas,materias)
         main()
 
 	elif opcao== 7 :
@@ -170,3 +179,4 @@ def main():
 
 
 main()
+
