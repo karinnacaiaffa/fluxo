@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+  <html lang="pt-br">
+    <head>
+        <style>
+            body { background-color: lightblue;}
+            h1 {color: white;
+                text-align: center;
+                font-size: 100 px;
+                width: 200 px
+                font-family: verdana;}
+
+            h2 {background-color: white;
+                color: steelblue;
+                text-align: center;
+                border: 5 px solid;
+                cursor: pointer;
+                }
+  
+        </style>
+
+    </head>
+<body>
+<header>
+    <h1> CLÍNICA YAMA </h1>
+    <div className="menu">   
+        <h2> Pacientes </h2>
+        <h2> Receitas </h2>
+        <h2> Consultas </h2>
+        <h2> Calendário </h2>
+
+    </div>
+
+    <button> Adicionar novo paciente </button>
+    <button> Marcar nova consulta </button>
+
+</header>
+</body>
+</html>
